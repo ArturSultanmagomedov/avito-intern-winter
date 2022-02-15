@@ -1,0 +1,13 @@
+host: "localhost"
+port: "8000"
+
+db:
+  username: "postgres"
+  host: "localhost"
+  port: "5433"
+  dbname: "postgres"
+  sslmode: "disable"
+
+log:
+  output: "./logs/" #if empty - std output
+  level: "debug"
