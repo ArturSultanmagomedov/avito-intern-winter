@@ -34,8 +34,8 @@ func InitLogger() error {
 	logrus.SetLevel(level)
 
 	if viper.GetString("log.output") != "" {
-		currentTime := viper.GetString("log.output") + time.Now().In(time.UTC).Format(time.RFC3339)
-		f, err := os.OpenFile(currentTime, os.O_WRONLY|os.O_CREATE|os.O_APPEND, 0666)
+		currentTime := viper.GetString("log.output") + time.Now().In(time.UTC).Format("20060102_150405") + ".txt"
+		f, err := os.OpenFile(currentTime, os.O_WRONLY|os.O_CREATE|os.O_APPEND, 0406)
 		if err != nil {
 			return errors.Wrap(err, "error opening file")
 		}
