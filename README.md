@@ -2,7 +2,7 @@
 
 <img align="right" height="180" src="./images/PngItem_4242405.png" width="270"/>
 
-Выполнил Султанмагомедов Артур
+[Задачу](https://github.com/avito-tech/autumn-2021-intern-assignment) выполнил Султанмагомедов Артур
 
 
 ### Спойлер: вы можете запустить приложение одной командой `make run`
